@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Janet</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="jumbotron jumbotron-fluid">
+
+  <div class="">
+    <div class="container mx-auto">
+      <div class="row">
+        <div class="col-12">
+        	<h1 class="element">Bonjour ! Je m'appelle Janet, comment puis-je vous aider ?</h1>
+          <h3>Je peux chercher les articles de presse qui vous intéressent.</h3>
+
+          <div class="input-group mb-3 btn-group btn-group-lg" role="group" aria-label="Basic example">
+            <div class="input-group-prepend">
+              <button id="voiceActivation" class="btn btn-success"><i class="fa fa-microphone"></i> Répondre à Janet</button>
+              <button id="stopTalk" class="btn btn-danger">Arrêter Janet</button>
+            </div>
+            <div class="inputVocalValue">
+            <label for="vocalValue"> Ce que vous dites à Janet apparait ici
+              <input id="vocalValue" class="form-control" type="text" name="vocalValue" disabled>
+            </label>
+              
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h1>Pour connaître les grands titres de l'actualités dites <i>"actualités"</i>, sinon dites <i>"choisir"</i> pour choisir un thème d'articles, je vous donnerais tout ce que je trouve.</h1>
+          
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+
+  <div class="container afficherArticles"></div>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="node_modules/typed.js/lib/typed.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+
+</body>
+</html>
